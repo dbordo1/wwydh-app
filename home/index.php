@@ -90,9 +90,14 @@
             .location:last-child {
                 border-bottom-width: 0px;
             }
+
+            .project {
+              overflow: hidden;
+            }
         </style>
     </head>
     <body>
+        <link href="../helpers/contact.css" type="text/css" rel="stylesheet" />
         <div id="nav">
             <div class="nav-inner width">
                 <a href="../home">
@@ -156,7 +161,19 @@
         </div>
         <div id="about"></div>
         <div id="how"></div>
-        <div id="contact"></div>
+        <div id="contact">
+          <div class="width">
+            <div id="contact_name">CONTACT US</div>
+				        <div id="form">
+                  <form action="#"> <!--BACKEND: Edit this action to wherever the form will submit to -->
+                    <input type="text" name="name" class="form-size" placeholder="Name"><br>
+                    <input type="text" name="email" class="form-size" placeholder="Email"><br>
+                    <textarea type="text" name="message" class="message" placeholder="Message"></textarea><br>
+                    <input type="submit" id="submit" class="form-size" value="Submit">
+                  </form>
+                </div>
+            </div>
+        </div>
         <div id="footer">
             <div class="grid-inner">
                 &copy; Copyright WWYDH <?php echo date("Y") ?>
