@@ -213,24 +213,37 @@ AS `projects contributed to`, (SELECT COUNT(p.id) AS count FROM projects p INNER
                                             </div>
                                             <tr>
                                                 <th> </th>
+                                                <th> </th>
                                                 <th>Title</th>
                                                 <th>Address</th>
                                                 <th>Category</th>
+                                                <th> </th>
                                                 <th> </th>
                                             </tr>
                                             <?php foreach ($plans_not_ready as $c => $p) { ?>
                                                 <tr class="plan" data-plan="<?php echo $p["plan"] ?>">
                                                     <td class="row-count"><div><?php echo $c + 1 ?></div></td>
-                                                    <td class="em"><?php echo $p["plan title"]; ?></td>
-                                                    <td><?php echo $p["building_address"]." ".$p["city"].", MD ".$p["zip_code"]; ?></td>
-                                                    <td><?php echo $idea_categories[$p["category"]]["title"] ?> </td>
                                                     <td>
-                                                        <div class="idea_image image" style="background-image: url(../helpers/idea_images/<?php echo $p["idea image"] ?>)">
-                                                        </div>
-                                                        <i class="fa fa-link"></i>
-                                                        <div class="location_image image" style="background-image: url(../helpers/location_images/<?php echo $p["location image"] ?>)">
-                                                        </div>
+                                                        <?php if (isset($p["idea image"])) { ?>
+                                                            <div class="idea_image image" style="background-image: url(../helpers/idea_images/<?php echo $p["idea image"] ?>)">
+                                                            </div>
+                                                        <?php } else { ?>
+                                                            <div class="location_image image" style="background-image: url(../helpers/location_images/<?php echo $p["location image"] ?>)">
+                                                            </div>
+                                                        <?php } ?>
                                                     </td>
+                                                    <td class="em"><?php echo $p["plan title"]; ?></td>
+                                                    <td>
+                                                        <?php if (isset($p["building_address"])) {
+                                                            echo $p["building_address"]." ".$p["city"].", MD ".$p["zip_code"];
+                                                        } ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php if(isset($p["category"])) {
+                                                            echo $idea_categories[$p["category"]]["title"];
+                                                        } ?>
+                                                    </td>
+                                                    <td class="edit">edit</td>
                                                 </tr>
                                             <?php } ?>
                                         </table>
@@ -243,6 +256,7 @@ AS `projects contributed to`, (SELECT COUNT(p.id) AS count FROM projects p INNER
                                             </div>
                                             <tr>
                                                 <th> </th>
+                                                <th></th>
                                                 <th>Title</th>
                                                 <th>Address</th>
                                                 <th>Category</th>
@@ -252,16 +266,12 @@ AS `projects contributed to`, (SELECT COUNT(p.id) AS count FROM projects p INNER
                                             <?php foreach ($plans_published as $c => $p) { ?>
                                                 <tr class="plan" data-plan="<?php echo $p["plan"] ?>">
                                                     <td class="row-count"><div><?php echo $c + 1 ?></div></td>
+                                                    <td><div class="idea_image image" style="background-image: url(../helpers/idea_images/<?php echo $p["idea image"] ?>)">
+                                                    </div></td>
                                                     <td class="em"><?php echo $p["plan title"]; ?></td>
                                                     <td><?php echo $p["building_address"]." ".$p["city"].", MD ".$p["zip_code"]; ?></td>
                                                     <td><?php echo $idea_categories[$p["category"]]["title"] ?> </td>
-                                                    <td>
-                                                        <div class="idea_image image" style="background-image: url(../helpers/idea_images/<?php echo $p["idea image"] ?>)">
-                                                        </div>
-                                                        <i class="fa fa-link"></i>
-                                                        <div class="location_image image" style="background-image: url(../helpers/location_images/<?php echo $p["location image"] ?>)">
-                                                        </div>
-                                                    </td>
+                                                    <td class="edit">edit</td>
                                                     <td>
                                                         <div class="unpublish btn">Unpublish <i class="fa fa-times" aria-hidden="true"></i></div>
                                                     </td>
