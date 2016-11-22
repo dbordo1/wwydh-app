@@ -105,6 +105,31 @@
             </div>
         </div>
     </div>
+
+    <div style="text-align:center;
+    background: #418040;
+    background: -webkit-linear-gradient(left bottom, #80D080, #418040);
+    background: -o-linear-gradient(top right, #80D080, #418040);
+    background: -moz-linear-gradient(top right, #80D080,#418040);
+    background: linear-gradient(to top right, #80D080, #418040);
+    margin-top: 65px;
+    width: 100%;
+    height: 50%;
+    min-height: 400px;">
+      Name and Stuff By Evan
+      <div style="margin-left: 85%;
+      text-alight:center;
+      margin-top: 40px;
+      width: 180px;
+      height: 40px;
+      background: #FFAE00;
+      border-radius:4px;">
+        &nbsp;
+        <div style="margin-top: -34px">
+          <a href="..\plans" style="color:#FFFFFF;text-decoration:none;"><h3>SUGGEST A PLAN</h3></a>
+        </div>
+      </div>
+    </div>
 <div id="profile">
   <div class="BoxContainer">
   <div id="AboutMe" class="BioContent">
