@@ -16,11 +16,20 @@
   text-align: left;
 }
 
+.NameLabel
+{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
 .BoxContent
 {
 	font-size: 14px;
   text-align: left;
 	position: inherit;
+  padding-right: 50px;
 }
 .BioContent
 {

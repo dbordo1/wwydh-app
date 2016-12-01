@@ -116,7 +116,11 @@
     width: 100%;
     height: 50%;
     min-height: 400px;">
-      Name and Stuff By Evan
+    <div class="NameLabel">
+      <?php
+      echo $nameRow['first']." ".$nameRow['last'];
+      ?>
+    </div>
       <div style="margin-left: 85%;
       text-alight:center;
       margin-top: 40px;
@@ -184,16 +188,6 @@
           <div class="BoxContent">
             <?php
             echo $rCompRow['completed'];
-            ?>
-          </div>
-        </div>
-        <div id="AboutMe" class="BoxContainer">
-          <div class="BoxLabel">
-            Name
-          </div>
-          <div class="BoxContent">
-            <?php
-            echo $nameRow['first']." ".$nameRow['last'];
             ?>
           </div>
         </div>

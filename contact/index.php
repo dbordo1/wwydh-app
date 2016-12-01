@@ -25,7 +25,7 @@
 	                        <ul>
 	                            <a href="../login"><li>Log in</li></a>
 	                            <a href="#"><li>Sign up</li></a>
-	                            <a href="../contact"><li>Contact</li></a>
+	                            <a href="../contact" class="active"><li>Contact</li></a>
 	                        </ul>
 	                    <?php } else { ?>
 	                        <div class="loggedin">
@@ -48,7 +48,7 @@
 	                <div id="main_nav" class="nav">
 	                    <ul>
 	                        <a href="../locations"><li>Locations</li></a>
-	                        <a href="../ideas" class="active"><li>Ideas</li></a>
+	                        <a href="../ideas"><li>Ideas</li></a>
 	                        <a href="../plans"><li>Plans</li></a>
 	                        <a href="../projects"><li>Projects</li></a>
 	                    </ul>

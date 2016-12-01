@@ -57,7 +57,7 @@
                 <div id="user_nav" class="nav">
                     <?php if (!isset($_SESSION["user"])) { ?>
                         <ul>
-                            <a href="../login"><li>Log in</li></a>
+                            <a href="../login" class="active"><li>Log in</li></a>
                             <a href="#"><li>Sign up</li></a>
                             <a href="../contact"><li>Contact</li></a>
                         </ul>
