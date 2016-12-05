@@ -41,8 +41,8 @@
 	                    <div id="logo_name">What Would You Do Here?</div>
 	                <div id="user_nav" class="nav">
 	                    <ul>
-	                        <a href="#"><li>Log in</li></a>
-	                        <a href="#"><li>Sign up</li></a>
+	                        <a href="../login"><li>Log in</li></a>
+	                        <a href="../signup"><li>Sign up</li></a>
 	                        <a href="../contact"><li>Contact</li></a>
 	                    </ul>
 	                </div>

@@ -130,7 +130,7 @@
       border-radius:4px;">
         &nbsp;
         <div style="margin-top: -34px">
-          <a href="..\plans" style="color:#FFFFFF;text-decoration:none;"><h3>SUGGEST A PLAN</h3></a>
+          <a href="..\plans" style="color:#FFFFFF;text-decoration:none;"><h3>SUGGEST A PROJECT</h3></a>
         </div>
       </div>
     </div>

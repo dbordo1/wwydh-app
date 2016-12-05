@@ -104,7 +104,7 @@ AS `projects contributed to`, (SELECT COUNT(p.id) AS count FROM projects p INNER
                     <?php if (!isset($_SESSION["user"])) { ?>
                         <ul>
                             <a href="../login"><li>Log in</li></a>
-                            <a href="#"><li>Sign up</li></a>
+                            <a href="../signup"><li>Sign up</li></a>
                             <a href="../contact"><li>Contact</li></a>
                         </ul>
                     <?php } else { ?>

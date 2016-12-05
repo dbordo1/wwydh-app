@@ -5,7 +5,7 @@
 		<link href="../helpers/header_footer.css" type="text/css" rel="stylesheet" />
 		<link href="../helpers/splash.css" type="text/css" rel="stylesheet" />
 		<link href="styles.css" type="text/css" rel="stylesheet" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="https://use.fontawesome.com/42543b711d.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="../helpers/globals.js" type="text/javascript"></script>
@@ -24,7 +24,7 @@
 	                    <?php if (!isset($_SESSION["user"])) { ?>
 	                        <ul>
 	                            <a href="../login"><li>Log in</li></a>
-	                            <a href="#"><li>Sign up</li></a>
+	                            <a href="../signup"><li>Sign up</li></a>
 	                            <a href="../contact" class="active"><li>Contact</li></a>
 	                        </ul>
 	                    <?php } else { ?>
